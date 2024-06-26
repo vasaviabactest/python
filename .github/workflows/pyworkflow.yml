@@ -46,3 +46,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}  
       - name: docker push
         run: docker push vasavi081/vasavi_image
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: java    
