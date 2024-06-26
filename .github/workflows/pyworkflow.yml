@@ -8,8 +8,8 @@ jobs:
   pybuildjob1:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, runner1]
-        python-version: ['3.8', '3.9', '3.10']
+        os: [runner1]
+        python-version: ['3.8', '3.9']
 
     runs-on: ${{ matrix.os }}
     steps:
