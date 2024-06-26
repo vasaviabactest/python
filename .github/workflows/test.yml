@@ -1,0 +1,13 @@
+name: test
+   
+on:
+ push:
+   branches:
+    - main
+ workflow_dispatch:
+jobs:
+ pybuildjob1:
+ runs-on: self-hosted
+ steps:
+  - name: login as root user in ubuntu
+    run:  echo "hello world"
