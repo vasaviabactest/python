@@ -24,9 +24,9 @@ jobs:
         continue-on-error: true
       - name: checking
         run: echo testing after error execution
-          #- name: setup env for  docker image installation
-          #uses: docker-practice/actions-setup-docker@master
-          #timeout-minutes: 12
+      - name: setup env for  docker image installation
+        uses: docker-practice/actions-setup-docker@master
+        timeout-minutes: 12
       - name: build docker image
         run: | 
           set -x
