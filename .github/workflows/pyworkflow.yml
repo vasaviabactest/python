@@ -22,7 +22,7 @@ jobs:
       - name: executing test case
         run: pytest
         continue-on-error: true
-      - name: checking.
+      - name: checking
         run: echo testing after error execution
           #- name: setup env for  docker image installation
           #uses: docker-practice/actions-setup-docker@master
